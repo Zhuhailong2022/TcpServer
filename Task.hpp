@@ -21,7 +21,7 @@ private:
     int TYPE = 0;
     WorkerThread* m_workerThread; // 指向 WorkerThread 对象的指针，也可以理解为标记该任务对象是由哪个子线程创建的，用于执行增删fd文件描述符
                                    
-    //读缓冲区、 写缓冲区
+    //读缓冲区、写缓冲区
     static const int MAX_BUFFER_SIZE = 4096;
     char buffer[MAX_BUFFER_SIZE];
     int totalBytesReceived = 0;
